@@ -71,9 +71,7 @@ class ChatServer
         return "<div style='" + align +
                " padding:8px 12px; margin-bottom:5px; border-radius:15px; "
                "box-shadow: 0 1px 2px rgba(0,0,0,0.1); width:fit-content; "
-               "max-width:80%; word-wrap: break-word;'>"
-               "<small style='color:gray; font-size:10px; display:block;'>" +
-               sender_ip + "</small>" + message + "</div>";
+               "max-width:80%; word-wrap: break-word;'>"+ message + "</div>";
     }
     sockaddr_in address;
     int server_fd = socket(AF_INET, SOCK_STREAM, 0);
